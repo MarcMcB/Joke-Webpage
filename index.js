@@ -14,3 +14,4 @@ app.get("/", async (req,res)=>{
     const result = await axios.get("https://official-joke-api.appspot.com/jokes/random");
     res.render("index.ejs", {setup: result.data.setup, punchline: result.data.punchline})
 })
+
